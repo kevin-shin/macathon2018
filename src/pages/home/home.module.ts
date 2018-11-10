@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
 import {ToolbarComponent} from '../../components/toolbar/toolbar.component';
+import {RoundProgressModule} from 'angular-svg-round-progressbar';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    RoundProgressModule,
     RouterModule.forChild(routes)
   ],
   declarations: [HomePage, ToolbarComponent]

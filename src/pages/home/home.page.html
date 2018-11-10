@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
+  <app-toolbar></app-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <app-toolbar></app-toolbar>
+  <div class="counter">{{drinkCurrent}}</div>
+  <round-progress
+          [current]="drinkCurrent"
+          [max]="drinkLimit"
+          [color]="color"          [background]="'#eaeaea'"
+          [radius]="125"
+          [stroke]="30"
+          [rounded]="true"
+          [duration]="800"
+          [animation]="'easeInOutQuart'"
+          [animationDelay]="0"></round-progress>
+  <h2 class="counterLeft">{{drinkLimit - drinkCurrent}} Left</h2>
 </ion-content>
+
