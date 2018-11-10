@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>setupGoal</ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <p style="font-size: 4em; text-align: center">Your limit is 10</p>
+  <ion-label float>Your goal is</ion-label>
+  <ion-input [type]="'text'" [placeholder]="'Enter goal'"></ion-input>
+  <ion-button float-end [href]="'/setupPair'"><ion-icon [name]="'arrow-forward'"></ion-icon></ion-button>
 </ion-content>

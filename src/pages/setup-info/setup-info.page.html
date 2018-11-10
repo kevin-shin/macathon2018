@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>setupInfo</ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <h1>Setup Info</h1>
+  <div margin="30px">
+    <ion-label float>Age</ion-label>
+    <ion-input [type]="'text'"></ion-input>
+    <ion-label float>Weight</ion-label>
+    <ion-input [type]="'text'"></ion-input>
+    <ion-label float>Gender</ion-label>
+    <ion-select>
+      <ion-select-option>Male</ion-select-option>
+      <ion-select-option>Female</ion-select-option>
+      <ion-select-option>Prefer not to answer</ion-select-option>
+    </ion-select>
+  </div>
+  <ion-button float-end [href]="'/setupGoal'"><ion-icon [name]="'arrow-forward'"></ion-icon></ion-button>
 </ion-content>

@@ -1,11 +1,12 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-button (click)="hiButton($event)">hi</ion-button>
-  <ion-input [(ngModel)]="hi"></ion-input>
-  <app-toolbar></app-toolbar>
+  <ion-card>
+    <ion-card-content>
+      <ion-input [type]="'email'" [placeholder]="'Enter email'"></ion-input>
+      <ion-input [type]="'password'" [placeholder]="'Enter password'"></ion-input>
+      <ion-button float-end [href]="'/setupInfo'">Login</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
