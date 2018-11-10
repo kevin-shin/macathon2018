@@ -1,3 +1,10 @@
-<p>
-  toolbar works!
-</p>
+<ion-navbar>
+    <ion-title>Tabs</ion-title>
+</ion-navbar>
+
+<ion-tabs tabs-only selectedIndex="1" color="primary">
+    <ion-tab tabIcon="home" [root]="root"></ion-tab>
+    <ion-tab tabIcon="stats" [root]="root"></ion-tab>
+    <ion-tab tabIcon="person" [root]="root"></ion-tab>
+    <ion-tab tabIcon="settings" [root]="root" ></ion-tab>
+  </ion-tabs>
