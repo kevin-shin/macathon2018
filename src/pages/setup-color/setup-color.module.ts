@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-import { LoginPage } from './login.page';
-import {ToolbarComponent} from '../../components/toolbar/toolbar.component';
+
+import { SetupColorPage } from './setup-color.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: SetupColorPage
   }
 ];
 
@@ -21,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [LoginPage, ToolbarComponent]
+  declarations: [SetupColorPage]
 })
-export class LoginPageModule {}
+export class SetupColorPageModule {}

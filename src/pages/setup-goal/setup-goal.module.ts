@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-import { LoginPage } from './login.page';
-import {ToolbarComponent} from '../../components/toolbar/toolbar.component';
+
+import { SetupGoalPage } from './setup-goal.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: SetupGoalPage
   }
 ];
 
@@ -21,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [LoginPage, ToolbarComponent]
+  declarations: [SetupGoalPage]
 })
-export class LoginPageModule {}
+export class SetupGoalPageModule {}

@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
+  hi = 'Initial';
+
   constructor() { }
+
+  hiButton() {
+      this.hi = 'Clicked';
+  }
 
   ngOnInit() {
   }
