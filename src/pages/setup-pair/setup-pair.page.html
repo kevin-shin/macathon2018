@@ -1,6 +1,8 @@
 <ion-header>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content padding text-center>
+            <ion-button (click)="pairToDevice()" >Pair</ion-button>
+            <progress-bar [progress]="completion" [color]="'#488aff'" >
+            </progress-bar>
 </ion-content>

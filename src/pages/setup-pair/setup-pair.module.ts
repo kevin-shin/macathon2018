@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { SetupPairPage } from './setup-pair.page';
 
+import {ProgressBarModule} from "angular-progress-bar"
+
 const routes: Routes = [
   {
     path: '',
@@ -19,7 +21,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ProgressBarModule
   ],
   declarations: [SetupPairPage]
 })

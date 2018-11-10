@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setup-pair.page.scss'],
 })
 export class SetupPairPage implements OnInit {
+  completion: number;
 
-  constructor() { }
+  constructor() {}
+
+  pairToDevice() {
+    setTimeout(()=>{
+      this.completion = 50;
+    }, 500);
+    setTimeout(()=>{
+      this.completion = 100;
+    }, 1000);
+    setTimeout(()=>{
+      window.location.href = "/setupColor";
+    }, 1500);
+  }
 
   ngOnInit() {
+    this.completion = 0;
   }
 
 }
