@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
   drinkCurrent: number;
   drinkLimit: number;
-  colorStart: number;
-  colorEnd: number;
   color: string;
 
   constructor() { }
@@ -23,20 +21,26 @@ export class HomePage implements OnInit {
       return color;
   }
 
-  getColor() {
-    let colorDelta = this.colorEnd - this.colorStart;
-    let drinkRatio = this.drinkCurrent / this.drinkLimit;
-    console.log(drinkRatio);
-    console.log(colorDelta);
-    console.log(this.colorStart + colorDelta * drinkRatio);
-    return this.parseColor(this.colorStart + colorDelta * drinkRatio);
+  increaseDrinks() {
+    this.drinkCurrent += 1;
+    if (this.drinkCurrent >= 10) {
+        this.color = '#AA3333'
+    }
+    else if (this.drinkCurrent >= 7) {
+        this.color = '#FF3333'
+    }
+    else if (this.drinkCurrent >= 4) {
+        this.color = '#BBAA22'
+    }
+    else if (this.drinkCurrent >= 0) {
+        this.color = '#0F7722'
+    }
   }
 
   ngOnInit() {
     this.drinkCurrent = 2;
-    this.drinkLimit = 10;
-    this.colorStart = 0x000000;
-    this.colorEnd = 0xFFFFFF;
-    this.color = '#0F7722';
+    this.drinkLimit = 9;
+    this.color='#0F7722';
+    window.addEventListener('keydown', this.increaseDrinks.bind(this));
   }
 }

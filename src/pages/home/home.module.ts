@@ -6,8 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { HomePage } from './home.page';
-import {ToolbarComponent} from '../../components/toolbar/toolbar.component';
 import {RoundProgressModule} from 'angular-svg-round-progressbar';
+import {SharedModule} from '../../app/shared/shared.module';
 
 const routes: Routes = [
   {
@@ -22,8 +22,9 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RoundProgressModule,
+    SharedModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [HomePage, ToolbarComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}
