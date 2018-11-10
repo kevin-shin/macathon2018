@@ -57,7 +57,7 @@ export class HomePage implements OnInit, OnDestroy {
     }, 300);
 
     this.drinkCurrent = 0;
-    this.drinkLimit = 9;
+    this.drinkLimit = 5;
     this.color='#0F7722';
     window.addEventListener('keydown', this.increaseDrinks.bind(this));
   }
