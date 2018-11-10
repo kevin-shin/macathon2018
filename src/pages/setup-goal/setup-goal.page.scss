@@ -1,0 +1,13 @@
+round-progress {
+    top: 10%;
+    margin: 0 auto;
+  }
+  
+  .counter {
+    position: absolute;
+    font-size: 8em;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+  }

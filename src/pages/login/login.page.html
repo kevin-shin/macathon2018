@@ -1,12 +1,19 @@
 <ion-header>
 </ion-header>
 
-<ion-content padding>
-  <ion-card>
+<ion-content padding >
+  <ion-card style="top:50%; transform: translate(0,-50%)">
     <ion-card-content>
-      <ion-input [type]="'email'" [placeholder]="'Enter email'"></ion-input>
-      <ion-input [type]="'password'" [placeholder]="'Enter password'"></ion-input>
-      <ion-button float-end [href]="'/setupInfo'">Login</ion-button>
+      <ion-item>
+          <ion-input [type]="'email'" [placeholder]="'Enter email'"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input [type]="'password'" [placeholder]="'Enter password'"></ion-input>
+      </ion-item>
+      <ion-item href="/setupInfo" color="secondary" style="margin-top:10%">
+        <ion-icon name="log-in" slot="start"></ion-icon>
+        <ion-label>Login</ion-label>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 </ion-content>

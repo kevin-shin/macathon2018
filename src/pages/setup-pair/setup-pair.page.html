@@ -1,8 +1,25 @@
 <ion-header>
-</ion-header>
 
+</ion-header>
+    
 <ion-content padding text-center>
-            <ion-button (click)="pairToDevice()" >Pair</ion-button>
-            <progress-bar [progress]="completion" [color]="'#488aff'" >
-            </progress-bar>
+    <ion-toolbar>
+        <ion-title>Pair to your device</ion-title>
+    </ion-toolbar>   
+    <ion-card style="margin-top:40% ;">
+        <ion-card-content>
+            <progress-bar [progress]="completion" [color]="'#3d6ac5'" >
+            </progress-bar> 
+            <ion-select style="width:100%; margin-top:5%">
+                <ion-select-option selected >Select Device</ion-select-option>
+                <ion-select-option>Cliq UEC23124</ion-select-option>
+                <ion-select-option>Cliq UEC42141</ion-select-option>
+                <ion-select-option>Cliq UEC415351</ion-select-option>
+            </ion-select>
+            <ion-item (click)="pairToDevice()" style="margin-top:5%" color="secondary">
+                <ion-label>Click to Pair</ion-label>
+            </ion-item>       
+        </ion-card-content>
+    </ion-card>
 </ion-content>
+    

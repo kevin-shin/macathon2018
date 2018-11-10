@@ -2,18 +2,32 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>Setup Info</h1>
-  <div margin="30px">
-    <ion-label float>Age</ion-label>
-    <ion-input [type]="'text'"></ion-input>
-    <ion-label float>Weight</ion-label>
-    <ion-input [type]="'text'"></ion-input>
-    <ion-label float>Gender</ion-label>
-    <ion-select>
-      <ion-select-option>Male</ion-select-option>
-      <ion-select-option>Female</ion-select-option>
-      <ion-select-option>Prefer not to answer</ion-select-option>
-    </ion-select>
-  </div>
-  <ion-button float-end [href]="'/setupGoal'"><ion-icon [name]="'arrow-forward'"></ion-icon></ion-button>
+  <ion-toolbar>
+    <ion-title>Account Information</ion-title>
+  </ion-toolbar>
+  <ion-card>
+      <ion-card-content>
+        <ion-item>
+            <ion-input [type]="'text'" [placeholder]="'Enter your name'"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input [type]="'number'" [placeholder]="'Enter your age'"></ion-input>
+        </ion-item>
+          <ion-select style="width:100%; margin-top:5%">
+              <ion-select-option selected>Sex</ion-select-option>
+              <ion-select-option>Male</ion-select-option>
+              <ion-select-option>Female</ion-select-option>
+              <ion-select-option>Prefer not to answer</ion-select-option>
+            </ion-select>
+        <ion-item>
+            <ion-input [type]="'number'" [placeholder]="'Enter your height (in cm)'"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input [type]="'number'" [placeholder]="'Enter your weight (in lbs)'"></ion-input>
+        </ion-item>
+        <ion-item href="/setupGoal" style="margin-top:20%" color="secondary">
+            <ion-label>Next</ion-label>
+          </ion-item>
+      </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,9 +1,38 @@
 <ion-header>
 </ion-header>
 
-<ion-content padding>
-  <p style="font-size: 4em; text-align: center">Your limit is 10</p>
-  <ion-label float>Your goal is</ion-label>
-  <ion-input [type]="'text'" [placeholder]="'Enter goal'"></ion-input>
-  <ion-button float-end [href]="'/setupPair'"><ion-icon [name]="'arrow-forward'"></ion-icon></ion-button>
+<ion-content padding text-center>
+  <ion-toolbar>
+      <ion-title>Set up your goal</ion-title>
+  </ion-toolbar> 
+  <div class="counter">
+    <h1 style="font-size: .5em; margin-bottom: 0;">5</h1>
+  </div>
+    <round-progress
+            [current]="10"
+            [max]="10"
+            [color]="'#BBAA22'"
+            [background]="'#eaeaea'"
+            [radius]="125"
+            [stroke]="30"
+            [rounded]="true"
+            [duration]="800"
+            [animation]="'easeInOutQuart'"
+            [animationDelay]="0"></round-progress>
+    
+    <p style="font-weight:bold; font-size: .8em; margin-top: -10px;">CONSUMPTION LIMIT</p>
+    
+    <ion-card style="margin-top:40% ;">
+        <ion-card-content>
+          <ion-item>
+              <ion-input [type]="'number'" [placeholder]="'Enter your goal'"></ion-input>
+          </ion-item>
+            <p style="margin-top: 15px;" text-justify>* Limit calculated by the IdeaLab algorithm, approved by the FDA in 2017. Different users may have
+                different metabolic rates, and should adjust values based on personal needs.
+            </p>
+          <ion-item href="/setupPair" style="margin-top:10%" color="secondary">
+              <ion-label>Next</ion-label>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

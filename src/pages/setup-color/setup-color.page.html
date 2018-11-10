@@ -1,12 +1,30 @@
 
 
 <ion-content padding text-center>
-  <h1>Choose the color your device will flash...</h1>
-
-  <div style="margin-top: 10%">
-      <ion-button [href]="'/home'">Red</ion-button>
-      <ion-button [href]="'/home'">Orange</ion-button>
-      <ion-button [href]="'/home'">Blue</ion-button>
-      <ion-button [href]="'/home'">Pink</ion-button>
-  </div>
+    <ion-toolbar>
+        <ion-title>Color Customization</ion-title>
+      </ion-toolbar>
+    <ion-card style="margin-top:40% ;">
+        <ion-card-content>
+            <ion-select style="width:100%; margin-top:5%">
+                <ion-select-option selected>Select Initial Color</ion-select-option>
+                <ion-select-option>Red</ion-select-option>
+                <ion-select-option>Blue</ion-select-option>
+                <ion-select-option>Purple</ion-select-option>
+                <ion-select-option>Orange</ion-select-option>
+                <ion-select-option>Pink</ion-select-option>
+              </ion-select>
+              <ion-select style="width:100%; margin-top:5%">
+                  <ion-select-option selected>Select Final Color</ion-select-option>
+                  <ion-select-option>Red</ion-select-option>
+                  <ion-select-option>Blue</ion-select-option>
+                  <ion-select-option>Purple</ion-select-option>
+                  <ion-select-option>Orange</ion-select-option>
+                  <ion-select-option>Pink</ion-select-option>
+                </ion-select>
+          <ion-item href="/home" style="margin-top:10%" color="secondary">
+              <ion-label>Next</ion-label>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

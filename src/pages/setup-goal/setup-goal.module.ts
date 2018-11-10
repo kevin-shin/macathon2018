@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { SetupGoalPage } from './setup-goal.page';
+import {RoundProgressModule} from 'angular-svg-round-progressbar';
+
 
 const routes: Routes = [
   {
@@ -19,6 +21,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    RoundProgressModule,
     RouterModule.forChild(routes)
   ],
   declarations: [SetupGoalPage]
