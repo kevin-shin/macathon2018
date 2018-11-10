@@ -12,7 +12,8 @@
           [duration]="800"
           [animation]="'easeInOutQuart'"
           [animationDelay]="0"></round-progress>
-  <h2 class="counterLeft">{{drinkLimit - drinkCurrent > 0 ? drinkLimit - drinkCurrent : drinkCurrent - drinkLimit}}
-    {{drinkLimit - drinkCurrent >= 0 ? 'Left' : 'Over'}}</h2>
+  <h3 class="timer">Time since last drink {{time}}</h3>
+  <h1 class="counterLeft">{{drinkLimit - drinkCurrent > 0 ? drinkLimit - drinkCurrent : drinkCurrent - drinkLimit}}
+    {{drinkLimit - drinkCurrent >= 0 ? 'Left' : 'Over'}}</h1>
 </ion-content>
 
