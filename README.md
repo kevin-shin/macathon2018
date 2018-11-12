@@ -6,7 +6,18 @@ The application has support to intake profile information, and allow the user to
 
 Some features we implemented or envisioned:
 
+Sample screen:
+
+![alt tag](./images/sample_screen.jpg)
+
+
+A sample graph which would reflect data for a longer period of time:
+
 ![alt tag](./images/graph.jpg)
+
+Notification feature:
+
+![alt tag](./images/sample_notification.jpg)
 
 
 The idea was to help people who are trying to implement steps to be more health conscious who want to focus on their physical health by purchasing an affordable, simple to use wristband. Based on initial market research on wearable technologies, we predict that such a product would sell very well, given the predicted expansion and development of this area. 
